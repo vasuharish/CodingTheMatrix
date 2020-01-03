@@ -42,6 +42,8 @@ L_average = sum([20,10,15,75])/len([20,10,15,75]) # average of: [20, 10, 15, 75]
 ## Task 12
 LofL = [[.25, .75, .1], [-1, 0], [4, 4, 4, 4]]
 LofL_sum = sum({sum(LofL[x]) for x in range(len(LofL))})
+# another way of doing
+LofL_sum = sum(sum([LofL],[]))
 
 ## Task 13
 cartesian_product =[[x,y] for x in ["A", "B", "C"] for y in [1,2,3]]
